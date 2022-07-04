@@ -249,7 +249,7 @@ img{
 
 /* Banner | Jesús */
 .banner{
-    background-image: url(img/banner.jpg);
+    background-image: url(../img/banner.jpg);
     height: 90rem;
     background-size: cover;
     background-position: center;
