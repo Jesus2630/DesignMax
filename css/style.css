@@ -316,6 +316,7 @@ img{
     align-items: center;
     margin-left: 15rem;
     height: 100%;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -339,7 +340,7 @@ img{
     margin-bottom: 5rem;
     transition-property: transform;
     transition-duration: 300ms;
-    width: 60%;
+    width: 40%;
     background-color: var(--color-1);
     border-radius: 2rem;
   }
@@ -376,6 +377,39 @@ img{
     font-family: 'Gantari', sans-serif;
   }
 
+  .listado__elemento:nth-child(1){
+    animation-name: entradaiz;
+    animation-duration: 2s;
+  }
+
+  .listado__elemento:nth-child(3){
+    animation-name: entradader;
+    animation-duration: 2s;
+  }
+
+  @keyframes entradaiz{
+    from{
+      margin-right: 80rem;
+    }
+    to{
+      margin-right: 0;
+    }
+  }
+
+  @keyframes entradader{
+    from{
+      margin-left: 80rem;
+    }
+    to{
+      margin-left: 0;
+    }
+  }
+
+
+
+  
+  
+/* =======================Banner|Fin============================ */
 
 /* Contenido Principal|Luna */
 .contenedor__img{
