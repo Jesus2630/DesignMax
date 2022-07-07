@@ -13,6 +13,8 @@
     --color-blanco: #ffffff;
     --color-negro: #000000;
     --color-oscuro2: #361f1f;
+    --fuente-titulo:'Raleway', sans-serif;
+    --fuente-secundario:  'Gantari', sans-serif;
 
 }
 
@@ -157,6 +159,7 @@ img{
 
 .menu__user{
   display: none;
+  font-family: var(--fuente-secundario);
 }
 
 /* Menu usuario */
@@ -210,6 +213,7 @@ img{
   padding: 2rem;
   text-align: center;
   color: var(--color-negro);
+  font-family: var(--fuente-titulo);
 }
 
 .carrito__lista{
@@ -583,14 +587,14 @@ img{
     font-family: 'Gantari', sans-serif;
     font-weight: bold;
     margin-left: 1rem;
-    color: var(--color-oscuro2);  
+    color: rgb(24, 24, 24);  
 }
 
 .envio_gratis p{
    font-size: 1.3rem;
    font-family: 'Gantari', sans-serif;
-    margin-left: 1rem;
-    color: #61697e;
+   margin-left: 1rem;
+   color: #61697e;
 }
 
 .tarjeta_info{
@@ -607,7 +611,7 @@ img{
    font-family: 'Gantari', sans-serif;
    font-weight: bold;
    margin-left: 1rem;  
-   color: var(--color-oscuro2); 
+   color: rgb(24, 24, 24); 
 }
 
 .tarjeta_info p{
@@ -631,7 +635,7 @@ img{
   font-family: 'Gantari', sans-serif;
   font-weight: bold;
   margin-left: 1rem; 
-  color: var(--color-oscuro2);
+  color: rgb(24, 24, 24);
 }
 
 .cambios_info p{
@@ -903,3 +907,140 @@ agregardespues
 .column-2 h3{
   text-decoration: none;
 }
+
+/* -- Sobre Nosotros -- */
+.recorte_banner{
+  background-image: url(../img/banner.jpg);
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recorte_banner i{
+  color: var(--color-blanco);
+  font-size: 4rem;
+  display: flex;
+  position: absolute;
+  left: 2%;
+
+}
+
+
+.sobre_nosotros_banner h1{
+  display: flex;
+  font-family: var(--fuente-titulo);
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--color-blanco);
+  letter-spacing: 1px;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 1366px) {
+  .sobre_nosotros_banner h1{
+    text-align: center;
+
+  }
+}
+
+.parte1_nosotros{
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-content: center;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.parte1_nosotros h2{
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  font-size: 4rem;
+  font-style: bold;
+  letter-spacing: 4px;
+  color: rgb(24, 24, 24);
+  margin: 4rem 0 2rem 0;
+}
+
+.parte1_nosotros p{
+  font-family: 'Gantari', sans-serif;
+  font-size: 2rem;
+  margin: 1rem 1rem 1rem 0;
+  color: #2a2a2b;
+}
+
+.parte1_nosotros img{
+  width: 48%;
+  height: 48%;
+  display: flex;
+  float: right;
+  margin: 0 2rem 2rem 2rem;
+
+}
+
+.parte2_contacto i{
+  color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+}
+
+.whatsapp{
+  display: flex;
+}
+
+.texto_whatsapp{
+  flex-direction: row;
+}
+
+.whatsapp h6{
+    display: flex;
+    font-size: 2.2rem;
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: var(--color-oscuro);  
+}
+
+.instagram{
+  display: flex;
+}
+
+.texto_instagram{
+  flex-direction: row;
+}
+
+.instagram h6{
+    display: flex;
+    font-size: 2.2rem;
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: var(--color-oscuro);  
+}
+
+.facebook{
+  display: flex;
+}
+
+.texto_facebook{
+  flex-direction: row;
+}
+
+.facebook h6{
+    display: flex;
+    font-size: 2.2rem;
+    font-family: 'Gantari', sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: var(--color-oscuro);  
+}
+
+
+
+/* -- Fin / Sobre Nosotros -- */
