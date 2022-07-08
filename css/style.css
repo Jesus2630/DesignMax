@@ -342,8 +342,18 @@ img{
     width: 60%;
     background-color: var(--color-1);
     border-radius: 2rem;
+    animation: animacion-banner 2s 1s ease-in-out
   }
 
+@keyframes  animacion-banner{
+  0% {
+    transform: translateX(-600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 
   @media (max-width: 1366px) {
 
