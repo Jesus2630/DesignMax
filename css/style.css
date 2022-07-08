@@ -377,7 +377,9 @@ img{
     font-family: 'Gantari', sans-serif;
   }
 
-  .listado__elemento:nth-child(1){
+
+  /* Listado animación 2 */
+  /* .listado__elemento:nth-child(1){
     animation-name: entradaiz;
     animation-duration: 2s;
   }
@@ -403,12 +405,8 @@ img{
     to{
       margin-left: 0;
     }
-  }
+  } */
 
-
-
-  
-  
 /* =======================Banner|Fin============================ */
 
 /* Contenido Principal|Luna */
@@ -684,7 +682,7 @@ img{
 /* Fin contenido Principal | Luna */
 
 
-/* Productos */
+/* =======================Productos|Inicio============================ */
 .productos{
   margin-bottom: 5rem;
   display: flex;
@@ -702,6 +700,7 @@ img{
 .productos__listado{
   display: grid;
   grid-template-columns: repeat(3, 45rem);
+  grid-template-rows: repeat(2, 45rem);
   gap: 5rem;
 }
 
