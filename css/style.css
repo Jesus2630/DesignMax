@@ -132,6 +132,8 @@ img{
     font-weight: bold;
 }
 
+
+
 @media (max-width: 1368px) {
   .navegacion__content a{
     padding: 1rem;
@@ -343,10 +345,11 @@ img{
     width: 40%;
     background-color: var(--color-1);
     border-radius: 2rem;
-/*  /*    animation: animacion-banner 2s 1s ease-in-out */
+    animation: animacion-banner 2s ease-in-out 
   }
 
 /* ------- 2da versión de la animación del banner ------- */
+/* ------- Sección de cositas feas :3 ------- */
 
 /* @keyframes  animacion-banner{
   0% {
@@ -357,6 +360,36 @@ img{
     transform: translateX(0px);
   }
 } */
+
+ /* Listado animación 1 */
+  /* .listado__elemento:nth-child(1){
+    animation-name: entradaiz;
+    animation-duration: 2s;
+  }
+
+  .listado__elemento:nth-child(3){
+    animation-name: entradader;
+    animation-duration: 2s;
+  }
+
+  @keyframes entradaiz{
+    from{
+      margin-right: 80rem;
+    }
+    to{
+      margin-right: 0;
+    }
+  }
+
+  @keyframes entradader{
+    from{
+      margin-left: 80rem;
+    }
+    to{
+      margin-left: 0;
+    }
+  } */
+
 
 
 @media (max-width: 1366px) {
@@ -391,35 +424,7 @@ img{
   }
 
 
-  /* Listado animación 2 */
-  /* .listado__elemento:nth-child(1){
-    animation-name: entradaiz;
-    animation-duration: 2s;
-  }
-
-  .listado__elemento:nth-child(3){
-    animation-name: entradader;
-    animation-duration: 2s;
-  }
-
-  @keyframes entradaiz{
-    from{
-      margin-right: 80rem;
-    }
-    to{
-      margin-right: 0;
-    }
-  }
-
-  @keyframes entradader{
-    from{
-      margin-left: 80rem;
-    }
-    to{
-      margin-left: 0;
-    }
-  } */
-
+ 
 /* =======================Banner|Fin============================ */
 
 /* Contenido Principal|Luna */
@@ -756,14 +761,33 @@ img{
   font-family: 'Gantari', sans-serif;
 }
 
-.producto__info h3{
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+
+.producto__heading{
+  font-size: 2.4rem;
+  padding-bottom: 1rem;
 }
 
-.producto__info p{
-  font-size: 1.7rem;
-  color: #333;
+.producto__calif{
+  padding: .5rem 0;
+}
+
+.producto__calif i{
+  font-size: 2.2rem;
+}
+
+.producto__btn{
+  margin-top: 1rem;
+  width: 30rem;
+  height: 3rem;
+  border: none;
+  font-weight: bold;
+  border-radius: .5rem;
+}
+
+.producto__btn:hover{
+  background-color: var(--color-1);
+  color: var(--color-blanco);
+  cursor: pointer;
 }
 
 .producto img{
@@ -1165,3 +1189,4 @@ img{
   50%{transform: rotateY(360deg)rotateX(360deg);}
   100%{transform: rotateY(0deg)rotateX(0deg);}
 }
+
