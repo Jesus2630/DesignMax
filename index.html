@@ -57,7 +57,7 @@
     </div>
 </header>
 
-<section class="banner">
+<section class="banner" id="banner">
         <div class="listado">
             <div class="listado__elemento">
                 <h2 class="listado__heading">La mejor colección</h2>
@@ -134,15 +134,16 @@
         </section>
 
         <!-- Contenido principal | Productos -->
-        <div class="productos__head">
+        <div class="productos__head" id="indumentaria">
             <h2 class="productos__heading text-center">Nuestros Productos</h2>
-            <div class="productos__barra">
-                <button><a href="#">Masculino</a></button>
-                <button><a href="#">Femenino</a></button>
-                <button><a href="#">Niños</a></button>
+            <div class="productos__barra" id="barra-animacion">
+                <a href="#masculino">Masculino</a>
+                <a href="#femenino">Femenino</a>
+                <a href="#niños">Niños</a>
             </div>
         </div>
-        <section class="productos" id="indumentaria">
+        <section class="productos" id="masculino">
+            <h2 class="productos__heading text-center">Masculino</h2>
             <div class="productos__visible productos__listado">
                 <article class="producto">
                     <img src="productos/superior/p1.webp" alt="">
@@ -293,7 +294,7 @@
             </div>
         </section>
 
-        <section class="productos" id="zapatillas">
+       <!--  <section class="productos" id="zapatillas">
             <h2 class="productos__heading text-center">Calzados</h2>
             <div class="productos__visible productos__listado">
                 <article class="producto">
@@ -503,9 +504,9 @@
                     </div>
                 </article>
             </div>
-        </section>
+        </section> -->
 
-        <section class="productos" id="mujeres">
+        <section class="productos" id="femenino">
             <h2 class="productos__heading text-center">Mujeres</h2>
             <div class="productos__visible productos__listado">
                 <article class="producto">
@@ -969,6 +970,8 @@
             </div>
         </section>
     </div>
+
+    <script src="/js/main.js"></script>
 </footer>
 </body>
 </html>
