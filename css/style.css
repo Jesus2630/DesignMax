@@ -361,6 +361,17 @@ img {
   width: 100%;
 }
 
+.listado__elemento i{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  color: var(--color-blanco);
+}
+
+.listado__masinfo{
+  background-color: var(--color-1);
+}
+
 @media (max-width: 768px) {
   .listado {
     display: none;
@@ -386,7 +397,7 @@ img {
   width: 40%;
   background-color: var(--color-1);
   border-radius: 2rem;
-  animation: animacion-banner 2s ease-in-out
+  animation: animacion-banner 2s ease-in-out;
 }
 
 /* ------- 2da versión de la animación del banner ------- */
@@ -750,6 +761,33 @@ img {
   font-family: 'Raleway', sans-serif;
 }
 
+.productos___btns{
+  display: flex;
+  position: absolute;
+  border: none;
+  justify-content: space-between;
+  display: flex;
+  width: 90%;
+  height: 30%;
+  top: 43rem;
+}
+
+.productos___btns button{
+  background-color: transparent;
+  border: none;
+}
+
+.productos___btns i{
+  font-size: 3rem;
+}
+
+.productos___btns i:hover{
+  color: var(--color-7);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
 .productos__barra{
   width: 80%;
   display: flex;
@@ -793,6 +831,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 
