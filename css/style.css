@@ -863,7 +863,18 @@ img {
   box-shadow: 0px 0px 15px #ccc;
   border-radius: 1rem;
   transition: all 200ms;
+  z-index: 1;
 }
+
+/* Estilos cambiados en JS */
+.no-visible{
+  display: none;
+}
+
+
+
+
+/* Estilos cambiados en JS */
 
 @media (max-width: 1366px) {
   .producto {
@@ -1324,5 +1335,48 @@ img {
 
   100% {
     transform: rotateY(0deg)rotateX(0deg);
+  }
+}
+
+/* Pagina Zapatillas */
+.banner__zapatillas{
+  background-image: url(/img/img7.jpg);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.barra-zapatillas{
+  margin-bottom: 0;
+}
+
+
+.extra-info__zapatillas .extra-info div:nth-child(1){
+  animation-name: info-izquierda;
+  animation-duration: 1s;
+}
+.extra-info__zapatillas .extra-info div:nth-child(3){
+  animation-name: info-derecha;
+  animation-duration: 1s;
+}
+
+
+@keyframes info-izquierda{
+  0%{
+    transform: translate(-200%)
+  }
+  100%{
+    transform: translate(-0%)
+  }
+}
+
+@keyframes info-derecha{
+  0%{
+    transform: translate(200%)
+  }
+  100%{
+    transform: translate(-0%)
   }
 }

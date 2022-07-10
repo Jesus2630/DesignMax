@@ -1,8 +1,5 @@
 /* Llamado a elementos */
-const productosMasculino = document.getElementById("masculino");
-const productosFemenino = document.getElementById("femenino");
-const productosNiños = document.getElementById("niños");
-
+const imagenesProductos = document.querySelectorAll(".img-producto");
 
 /* CargarEventListeners|Iniciar App :3 */
 cargarEventListeners();
@@ -10,12 +7,14 @@ function cargarEventListeners(){
     /* Función Scroll Barra Productos */
     window.addEventListener("scroll", barraProductos);
 
+    /* Mostrar imagen en grande */
+    imagenesProductos.addEventListener("click", mostrarImagen);
 }
 
 
 
 
-
+/* Funciones */
 function barraProductos(){
     let animacion = document.getElementById("barra-animacion");
     let obtenerPosition = animacion.getBoundingClientRect().top;
@@ -25,4 +24,8 @@ function barraProductos(){
     if(obtenerPosition < tamañoPantalla){
         animacion.style.animation = "barra-animacion 2s"
     }
+}
+
+function mostrarImagen(){
+    console.log("Hooola?");
 }
