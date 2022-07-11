@@ -1390,13 +1390,14 @@ img {
   right: 30px;
   position: fixed;
   z-index: 99; 
-  color: #333;
+  color: rgb(133, 25, 138);
   cursor: pointer;
   outline: none;
   border: none;
   outline: none;
   opacity: 0.5;
   background-color: transparent;
+  text-shadow: 0px 0px 15px #ffffff;
 }
 
 @media (max-width: 768px){

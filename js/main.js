@@ -22,7 +22,7 @@ function barraProductos(){
 }
 
 /* Boton Top */
-var botonvolverArriba = document.getElementById("boton-top");
+const botonvolverArriba = document.getElementById("boton-top");
 
 
 function scrollFunction() {
