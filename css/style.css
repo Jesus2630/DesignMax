@@ -1380,3 +1380,67 @@ img {
     transform: translate(-0%)
   }
 }
+
+/* Boton Top */
+
+#boton-top{
+  display: none;
+  font-size: 6rem;
+  bottom: 20px;
+  right: 30px;
+  position: fixed;
+  z-index: 99; 
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+@media (max-width: 768px){
+  #boton-top{
+    font-size: 5rem;
+    bottom: 6px;
+    right: 6px;
+  }
+}
+
+#boton-top:hover{
+  color: #333;
+  opacity: 1;
+}
+
+.botonEntrada{
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: botonEntrada;
+}
+
+@keyframes botonEntrada {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.botonSalida {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: botonSalida;
+}
+
+@keyframes botonSalida {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}

@@ -1,17 +1,12 @@
 /* Llamado a elementos */
-const imagenesProductos = document.querySelectorAll(".img-producto");
 
 /* CargarEventListeners|Iniciar App :3 */
 cargarEventListeners();
 function cargarEventListeners(){
     /* Función Scroll Barra Productos */
     window.addEventListener("scroll", barraProductos);
-
-    /* Mostrar imagen en grande */
-    imagenesProductos.addEventListener("click", mostrarImagen);
+    window.addEventListener("scroll", scrollFunction);
 }
-
-
 
 
 /* Funciones */
@@ -26,6 +21,31 @@ function barraProductos(){
     }
 }
 
-function mostrarImagen(){
-    console.log("Hooola?");
+/* Boton Top */
+var botonvolverArriba = document.getElementById("boton-top");
+
+
+function scrollFunction() {
+    if(window.pageYOffset > 600){
+        if(!botonvolverArriba.classList.contains("botonEntrada")) {
+        botonvolverArriba.classList.remove("botonSalida");
+        botonvolverArriba.classList.add("botonEntrada");
+        botonvolverArriba.style.display = "block";
+        }
+    }
+    else {
+        if(botonvolverArriba.classList.contains("botonEntrada")){
+        botonvolverArriba.classList.remove("botonEntrada");
+        botonvolverArriba.classList.add("botonSalida");
+        setTimeout(function() {
+        botonvolverArriba.style.display = "none";
+        }, 250)
+        }
+    }
+}
+
+botonvolverArriba.addEventListener("click", backtoTop);
+
+function backtoTop(){
+    window.scrollTo(0,0);
 }
