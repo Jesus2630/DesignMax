@@ -1,7 +1,7 @@
 /* Llamado a elementos */
 
 /* CargarEventListeners|Iniciar App :3 */
-cargarEventListeners();
+ cargarEventListeners(); 
 function cargarEventListeners(){
     /* Función Scroll Barra Productos */
     window.addEventListener("scroll", barraProductos);
