@@ -1,0 +1,38 @@
+[
+	{
+		"Imagen": "productos/superior/p1.webp",
+		"Producto": "Campera Azul Deportiva",
+		"Precio": "5.200$",
+		"Ranking": 4
+	},
+	{
+		"Imagen": "productos/superior/p2.webp",
+		"Producto": "Buzo Rojo Slim",
+		"Precio": "3.200$",
+		"Ranking": 4
+	},
+	{
+		"Imagen": "productos/superior/p3.webp",
+		"Producto": "Parka Hombre Verde",
+		"Precio": "9.540$",
+		"Ranking": 4
+	},
+	{
+		"Imagen": "productos/superior/p4.webp",
+		"Producto": "Campera Gris Inflable",
+		"Precio": "7.200$",
+		"Ranking": 4
+	},
+	{
+		"Imagen": "productos/superior/p5.webp",
+		"Producto": "Buzo Azul Con Cuello",
+		"Precio": "3.200$",
+		"Ranking": 4
+	},
+	{
+		"Imagen": "productos/superior/p6.webp",
+		"Producto": "Campera Azul",
+		"Precio": "6.200$",
+		"Ranking": 4
+	}
+]
